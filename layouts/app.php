@@ -14,30 +14,19 @@
 
     <!-- Main Content -->
     <div class="flex-1 p-6 transition-all duration-300 min-h-screen" id="mainContent">
-        <?php include "../components/options.php" ?>
+        <?php include "../components/options.php"; ?>
 
-        <div>
-            <?php
-            // Define the allowed pages
-            $allowed_pages = ['dashboard'];
+        <?php
+        // Define allowed pages
+        $allowed_pages = ['dashboard', 'settings'];
 
-            // Check if ?page= is set in the URL
-            if (isset($_GET['page'])) {
-                $page = $_GET['page'];
-
-                // Validate the page and include it if allowed
-                if (in_array($page, $allowed_pages) && file_exists(__DIR__ . "/../pages/" . $page . ".php")) {
-                    include __DIR__ . "/../pages/" . $page . ".php";
-                } else {
-                    echo "<h1 class='text-red-500 text-2xl'>Page does not exist</h1>";
-                }
-            } else {
-                // If no ?page= is provided, show "Page not found"
-                echo "<h1 class='text-red-500 text-2xl'>Page does not exist</h1>";
-            }
-            ?>
-
-        </div>
+        // Check if ?page= is set and valid
+        if (isset($_GET['page']) && in_array($_GET['page'], $allowed_pages)) {
+            include __DIR__ . "/../pages/" . $_GET['page'] . ".php";
+        } else {
+            echo "<h1 class='text-red-500 text-2xl'>Page does not exist</h1>";
+        }
+        ?>
     </div>
 
     <!-- Footer -->

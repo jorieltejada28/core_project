@@ -1,4 +1,4 @@
-<div class="bg-gray-900 p-4 rounded-md flex items-center">
+<div class="bg-gray-900 p-4 flex items-center rounded-t-lg">
     <!-- Hamburger Menu -->
     <button id="menuToggleBtn" class="text-2xl p-2 bg-gray-300 rounded-md mr-4">
         <i class="fas fa-bars"></i>
