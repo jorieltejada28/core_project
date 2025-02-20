@@ -1,21 +1,21 @@
 <div class="grid grid-cols-5 bg-gray-900 p-5 gap-6">
-    <div class="bg-[#2F697D] text-white text-center px-6 py-3">
+    <div class="bg-[#2F697D] text-white text-center rounded-lg px-6 py-3">
         <p class="font-bold">Total</p>
         <p>800</p>
     </div>
-    <div class="bg-[#17C3C3] text-white text-center px-6 py-3">
+    <div class="bg-[#17C3C3] text-white text-center rounded-lg px-6 py-3">
         <p class="font-bold">Involuntary</p>
         <p>200</p>
     </div>
-    <div class="bg-[#F4B942] text-white text-center px-6 py-3">
+    <div class="bg-[#F4B942] text-white text-center rounded-lg px-6 py-3">
         <p class="font-bold">Voluntary</p>
         <p>100</p>
     </div>
-    <div class="bg-[#F08E7E] text-white text-center px-6 py-3">
+    <div class="bg-[#F08E7E] text-white text-center rounded-lg px-6 py-3">
         <p class="font-bold">Female</p>
         <p>200</p>
     </div>
-    <div class="bg-[#E15565] text-white text-center px-6 py-3">
+    <div class="bg-[#E15565] text-white text-center rounded-lg px-6 py-3">
         <p class="font-bold">Male</p>
         <p>100</p>
     </div>
