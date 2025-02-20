@@ -5,7 +5,7 @@
         <hr class="border-t border-white my-2 w-full">
         <p class="text-lg font-bold">80%</p>
         <div class="w-full bg-gray-700 rounded-full h-2">
-            <div class="bg-blue-500 h-2 rounded-full" style="width: 80%;"></div>
+            <div class="bg-yellow-400 h-2 rounded-full" style="width: 80%;"></div> <!-- Opposite of Blue -->
         </div>
     </div>
 
@@ -15,7 +15,7 @@
         <hr class="border-t border-white my-2 w-full">
         <p class="text-lg font-bold">60%</p>
         <div class="w-full bg-gray-700 rounded-full h-2">
-            <div class="bg-pink-500 h-2 rounded-full" style="width: 60%;"></div>
+            <div class="bg-red-500 h-2 rounded-full" style="width: 60%;"></div> <!-- Opposite of Teal -->
         </div>
     </div>
 
@@ -25,7 +25,7 @@
         <hr class="border-t border-white my-2 w-full">
         <p class="text-lg font-bold">40%</p>
         <div class="w-full bg-gray-700 rounded-full h-2">
-            <div class="bg-blue-500 h-2 rounded-full" style="width: 40%;"></div>
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 40%;"></div> <!-- Opposite of Yellow -->
         </div>
     </div>
 
@@ -35,7 +35,7 @@
         <hr class="border-t border-white my-2 w-full">
         <p class="text-lg font-bold">70%</p>
         <div class="w-full bg-gray-700 rounded-full h-2">
-            <div class="bg-orange-500 h-2 rounded-full" style="width: 70%;"></div>
+            <div class="bg-indigo-500 h-2 rounded-full" style="width: 70%;"></div> <!-- Opposite of Orange -->
         </div>
     </div>
 
@@ -45,7 +45,7 @@
         <hr class="border-t border-white my-2 w-full">
         <p class="text-lg font-bold">50%</p>
         <div class="w-full bg-gray-700 rounded-full h-2">
-            <div class="bg-purple-500 h-2 rounded-full" style="width: 50%;"></div>
+            <div class="bg-cyan-500 h-2 rounded-full" style="width: 50%;"></div> <!-- Opposite of Red -->
         </div>
     </div>
 </div>
