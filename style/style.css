@@ -13,3 +13,7 @@
 #pieChart2 {
     height: 400px !important;
 }
+.custom-gradient-bg {
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364) !important;
+    color: white !important;
+}

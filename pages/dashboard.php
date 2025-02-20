@@ -1,51 +1,56 @@
 <div class="grid grid-cols-5 bg-gray-900 p-5 gap-6">
     <!-- Reservation System -->
-    <div class="bg-[#2F697D] text-white text-center rounded-lg px-6 py-3 cursor-pointer hover:bg-[#24525F] hover:scale-105 transition duration-300 flex flex-col justify-between h-full">
+    <div onclick="showInfo('Reservation System', 'Handles booking and reservations for guests.')"
+        class="bg-[#2F697D] text-white text-center rounded-lg px-6 py-3 cursor-pointer hover:bg-[#24525F] hover:scale-105 transition duration-300 flex flex-col justify-between h-full">
         <p class="font-bold">Reservation System</p>
         <hr class="border-t border-white my-2 w-full">
         <p class="text-lg font-bold">80%</p>
         <div class="w-full bg-gray-700 rounded-full h-2">
-            <div class="bg-yellow-400 h-2 rounded-full" style="width: 80%;"></div> <!-- Opposite of Blue -->
+            <div class="bg-yellow-400 h-2 rounded-full" style="width: 80%;"></div>
         </div>
     </div>
 
     <!-- POS System -->
-    <div class="bg-[#17C3C3] text-white text-center rounded-lg px-6 py-3 cursor-pointer hover:bg-[#13A1A1] hover:scale-105 transition duration-300 flex flex-col justify-between h-full">
+    <div onclick="showInfo('Point of Sale System', 'Manages transactions and sales processing.')"
+        class="bg-[#17C3C3] text-white text-center rounded-lg px-6 py-3 cursor-pointer hover:bg-[#13A1A1] hover:scale-105 transition duration-300 flex flex-col justify-between h-full">
         <p class="font-bold">Point of Sale System</p>
         <hr class="border-t border-white my-2 w-full">
         <p class="text-lg font-bold">60%</p>
         <div class="w-full bg-gray-700 rounded-full h-2">
-            <div class="bg-red-500 h-2 rounded-full" style="width: 60%;"></div> <!-- Opposite of Teal -->
+            <div class="bg-red-500 h-2 rounded-full" style="width: 60%;"></div>
         </div>
     </div>
 
     <!-- Inventory Management -->
-    <div class="bg-[#F4B942] text-white text-center rounded-lg px-6 py-3 cursor-pointer hover:bg-[#D89C34] hover:scale-105 transition duration-300 flex flex-col justify-between h-full">
+    <div onclick="showInfo('Inventory Management', 'Keeps track of stock levels and supplies.')"
+        class="bg-[#F4B942] text-white text-center rounded-lg px-6 py-3 cursor-pointer hover:bg-[#D89C34] hover:scale-105 transition duration-300 flex flex-col justify-between h-full">
         <p class="font-bold">Inventory Management</p>
         <hr class="border-t border-white my-2 w-full">
         <p class="text-lg font-bold">40%</p>
         <div class="w-full bg-gray-700 rounded-full h-2">
-            <div class="bg-blue-500 h-2 rounded-full" style="width: 40%;"></div> <!-- Opposite of Yellow -->
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 40%;"></div>
         </div>
     </div>
 
     <!-- Housekeeping & Maintenance -->
-    <div class="bg-[#F08E7E] text-white text-center rounded-lg px-6 py-3 cursor-pointer hover:bg-[#D47A6C] hover:scale-105 transition duration-300 flex flex-col justify-between h-full">
+    <div onclick="showInfo('Housekeeping & Maintenance', 'Manages room cleanliness and repairs.')"
+        class="bg-[#F08E7E] text-white text-center rounded-lg px-6 py-3 cursor-pointer hover:bg-[#D47A6C] hover:scale-105 transition duration-300 flex flex-col justify-between h-full">
         <p class="font-bold">Housekeeping & Maintenance</p>
         <hr class="border-t border-white my-2 w-full">
         <p class="text-lg font-bold">70%</p>
         <div class="w-full bg-gray-700 rounded-full h-2">
-            <div class="bg-indigo-500 h-2 rounded-full" style="width: 70%;"></div> <!-- Opposite of Orange -->
+            <div class="bg-indigo-500 h-2 rounded-full" style="width: 70%;"></div>
         </div>
     </div>
 
     <!-- Customer Relationship Management -->
-    <div class="bg-[#E15565] text-white text-center rounded-lg px-6 py-3 cursor-pointer hover:bg-[#C34452] hover:scale-105 transition duration-300 flex flex-col justify-between h-full">
+    <div onclick="showInfo('Customer Relationship Management', 'Handles guest communication and feedback.')"
+        class="bg-[#E15565] text-white text-center rounded-lg px-6 py-3 cursor-pointer hover:bg-[#C34452] hover:scale-105 transition duration-300 flex flex-col justify-between h-full">
         <p class="font-bold">Customer Relationship Management</p>
         <hr class="border-t border-white my-2 w-full">
         <p class="text-lg font-bold">50%</p>
         <div class="w-full bg-gray-700 rounded-full h-2">
-            <div class="bg-cyan-500 h-2 rounded-full" style="width: 50%;"></div> <!-- Opposite of Red -->
+            <div class="bg-cyan-500 h-2 rounded-full" style="width: 50%;"></div>
         </div>
     </div>
 </div>
