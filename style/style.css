@@ -1,3 +1,15 @@
 #sidebar {
     transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
 }
+.chart {
+    width: 100% !important;
+}
+
+#lineChart {
+    height: 250px !important;
+}
+
+#pieChart1,
+#pieChart2 {
+    height: 400px !important;
+}
