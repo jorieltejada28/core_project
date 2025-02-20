@@ -8,7 +8,7 @@
 <body class="flex flex-col min-h-screen bg-gray-900">
 
     <!-- Sidebar -->
-    <div id="sidebar" class="w-64 bg-gray-900 text-white text-lg p-4 fixed h-full left-0 top-0 transform transition-transform flex flex-col justify-between border-t-4 border-r-4 border-l-4 border-b-4 border-blue-500">
+    <div id="sidebar" class="w-64 bg-gray-900 text-white text-lg p-4 fixed h-full left-0 top-0 transform transition-transform flex flex-col justify-between border-r-4 border-blue-500">
         <!-- Sidebar Content -->
         <?php include "../components/sidebar.php" ?>
     </div>
@@ -31,7 +31,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center p-4 mt-auto border-t-4 border-r-4 border-l-4 border-b-4 border-blue-500"">
+    <footer class="bg-gray-900 text-white text-center p-4 mt-auto border-t-4 border-b-4 border-blue-500"">
         <?php include "../components/footer.php" ?>
     </footer>
 
