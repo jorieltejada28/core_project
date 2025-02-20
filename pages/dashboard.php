@@ -1,4 +1,4 @@
-<div class="grid grid-cols-5 bg-gray-900 p-5 gap-6">
+<div class="grid grid-cols-5 bg-gray-900 p-5 gap-6 border-r-4 border-l-4 border-blue-500">
     <!-- Reservation System -->
     <div onclick="showInfo('Reservation System', 'Handles booking and reservations for guests.')"
         class="bg-[#2F697D] text-white text-center rounded-lg px-6 py-3 cursor-pointer hover:bg-[#24525F] hover:scale-105 transition duration-300 flex flex-col justify-between h-full">
@@ -56,7 +56,7 @@
 </div>
 
 <!-- Charts Section -->
-<div class="bg-gray-900 p-10 grid grid-cols-2 gap-6">
+<div class="bg-gray-900 p-10 grid grid-cols-2 gap-6 border-r-4 border-l-4 border-b-4 border-blue-500">
     <!-- Line Chart -->
     <div class="col-span-3 text-center border-4 border-blue-500 p-4">
         <h2 class="text-white text-xl font-bold mb-4">Tickets Solved Over Time</h2>
