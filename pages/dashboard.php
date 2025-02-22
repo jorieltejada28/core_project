@@ -81,7 +81,11 @@
 
     <!-- Calendar -->
     <div class="border-4 border-blue-500 p-4 rounded-lg text-white">
-        <h2 class="text-xl font-bold mb-4 text-center">Calendar</h2>
+        <div class="flex justify-between items-center mb-4">
+            <button id="prevMonth" class="text-2xl px-3 hover:text-blue-400 transition-transform transform hover:scale-110">⬅️</button>
+            <h2 id="monthYear" class="text-xl font-bold"></h2>
+            <button id="nextMonth" class="text-2xl px-3 hover:text-blue-400 transition-transform transform hover:scale-110">➡️</button>
+        </div>
         <div id="calendar" class="grid grid-cols-7 gap-2 text-center"></div>
     </div>
 </div>
@@ -104,35 +108,35 @@
                 <tr class="hover:bg-gray-700 transition duration-300">
                     <td class="p-3 border">#1001</td>
                     <td class="p-3 border">Login Issue</td>
-                    <td class="p-3 border">Renz Supot</td>
+                    <td class="p-3 border">Randy Orton</td>
                     <td class="p-3 border text-yellow-400">Pending</td>
                     <td class="p-3 border">2025-02-21</td>
                 </tr>
                 <tr class="hover:bg-gray-600 transition duration-300">
                     <td class="p-3 border">#1002</td>
                     <td class="p-3 border">Payment Error</td>
-                    <td class="p-3 border">Richard Supot</td>
+                    <td class="p-3 border">John Cena</td>
                     <td class="p-3 border text-green-400">Resolved</td>
                     <td class="p-3 border">2025-02-20</td>
                 </tr>
                 <tr class="hover:bg-gray-600 transition duration-300">
                     <td class="p-3 border">#1003</td>
                     <td class="p-3 border">Login Issue</td>
-                    <td class="p-3 border">Dain Supot</td>
+                    <td class="p-3 border">Undertaker</td>
                     <td class="p-3 border text-green-400">Resolved</td>
                     <td class="p-3 border">2025-02-20</td>
                 </tr>
                 <tr class="hover:bg-gray-600 transition duration-300">
                     <td class="p-3 border">#1004</td>
                     <td class="p-3 border">Payment Error</td>
-                    <td class="p-3 border">Malupiton</td>
+                    <td class="p-3 border">Browny James</td>
                     <td class="p-3 border text-red-400">Decline</td>
                     <td class="p-3 border">2025-02-20</td>
                 </tr>
                 <tr class="hover:bg-gray-600 transition duration-300">
                     <td class="p-3 border">#1005</td>
                     <td class="p-3 border">Payment Error</td>
-                    <td class="p-3 border">Nag kaon kana?</td>
+                    <td class="p-3 border">Awra Briguela</td>
                     <td class="p-3 border text-yellow-400">Pending</td>
                     <td class="p-3 border">2025-02-20</td>
                 </tr>

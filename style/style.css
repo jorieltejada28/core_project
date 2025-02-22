@@ -17,11 +17,3 @@
     background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364) !important;
     color: white !important;
 }
-
-/* Bakla ka pala e */
-.rainbow-heart {
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-    -webkit-background-clip: text;
-    color: transparent;
-    display: inline-block;
-}

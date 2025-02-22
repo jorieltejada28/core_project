@@ -1,13 +1,22 @@
-function generateCalendar() {
+let currentYear, currentMonth;
+
+function generateCalendar(year, month) {
     const calendar = document.getElementById("calendar");
-    calendar.innerHTML = ""; 
+    const monthYearLabel = document.getElementById("monthYear");
+
+    calendar.innerHTML = ""; // Clear existing dates
 
     const now = new Date();
-    const year = now.getFullYear();
-    const month = now.getMonth();
     const today = now.getDate();
+    const currentYearToday = now.getFullYear();
+    const currentMonthToday = now.getMonth();
+
     const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    // Set the header text for the month and year
+    const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    monthYearLabel.textContent = `${monthNames[month]} ${year}`;
 
     // Weekday Headers
     const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -30,8 +39,8 @@ function generateCalendar() {
         const dateElement = document.createElement("div");
         dateElement.classList.add("p-2", "bg-gray-700", "rounded-lg", "cursor-pointer", "hover:bg-blue-500", "transition");
 
-        // Highlight today's date in green
-        if (i === today) {
+        // Highlight today's date if it's the current month and year
+        if (i === today && year === currentYearToday && month === currentMonthToday) {
             dateElement.classList.add("bg-green-500", "text-white", "font-bold");
         }
 
@@ -40,4 +49,28 @@ function generateCalendar() {
     }
 }
 
-generateCalendar(); 
+// Function to navigate months
+function changeMonth(offset) {
+    currentMonth += offset;
+
+    if (currentMonth < 0) {
+        currentMonth = 11;
+        currentYear--;
+    } else if (currentMonth > 11) {
+        currentMonth = 0;
+        currentYear++;
+    }
+
+    generateCalendar(currentYear, currentMonth);
+}
+
+// Ensure the script runs after the page loads
+window.onload = function () {
+    const now = new Date();
+    currentYear = now.getFullYear();
+    currentMonth = now.getMonth();
+    generateCalendar(currentYear, currentMonth);
+
+    document.getElementById("prevMonth").addEventListener("click", () => changeMonth(-1));
+    document.getElementById("nextMonth").addEventListener("click", () => changeMonth(1));
+};

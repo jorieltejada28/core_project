@@ -42,10 +42,7 @@
         <div id="profileDropdown" class="hidden absolute right-0 mt-2 w-48 bg-gray-800 text-white rounded-md shadow-lg">
             <a href="#" class="block px-4 py-2 hover:bg-gray-700">View Profile</a>
             <a href="#" class="block px-4 py-2 hover:bg-gray-700">Settings</a>
-            <a href="#" class="block px-4 py-2 hover:bg-red-600 group">
-                <span class="group-hover:hidden block">Bakal ako hover me</span>
-                <span class="hidden group-hover:block">Crush ko si renz <span class="rainbow-heart">❤️</span></span>
-            </a>
+            <a href="#" class="block px-4 py-2 hover:bg-red-600 group">Sign Out</a>
         </div>
     </div>
 </div>

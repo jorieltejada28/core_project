@@ -31,7 +31,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center p-4 mt-auto border-t-4 border-b-4 border-blue-500"">
+    <footer class="bg-gray-900 text-white text-center p-4 mt-auto border-t-4 border-blue-500"">
         <?php include "../components/footer.php" ?>
     </footer>
 
