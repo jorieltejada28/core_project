@@ -113,35 +113,35 @@
                     <td class="p-3 border border-[#A67B5B]">#1001</td>
                     <td class="p-3 border border-[#A67B5B]">Login Issue</td>
                     <td class="p-3 border border-[#A67B5B]">Randy Orton</td>
-                    <td class="p-3 border border-[#A67B5B] text-yellow-700 font-bold">Pending</td>
+                    <td class="p-3 border border-[#A67B5B] text-yellow-700 font-bold status">Pending</td>
                     <td class="p-3 border border-[#A67B5B]">2025-02-21</td>
                 </tr>
                 <tr class="hover:bg-[#C19A6B] transition duration-300">
                     <td class="p-3 border border-[#A67B5B]">#1002</td>
                     <td class="p-3 border border-[#A67B5B]">Payment Error</td>
                     <td class="p-3 border border-[#A67B5B]">John Cena</td>
-                    <td class="p-3 border border-[#A67B5B] text-green-700 font-bold">Resolved</td>
+                    <td class="p-3 border border-[#A67B5B] text-green-700 font-bold status">Resolved</td>
                     <td class="p-3 border border-[#A67B5B]">2025-02-20</td>
                 </tr>
                 <tr class="hover:bg-[#C19A6B] transition duration-300">
                     <td class="p-3 border border-[#A67B5B]">#1003</td>
                     <td class="p-3 border border-[#A67B5B]">Login Issue</td>
                     <td class="p-3 border border-[#A67B5B]">Undertaker</td>
-                    <td class="p-3 border border-[#A67B5B] text-green-700 font-bold">Resolved</td>
+                    <td class="p-3 border border-[#A67B5B] text-green-700 font-bold status">Resolved</td>
                     <td class="p-3 border border-[#A67B5B]">2025-02-20</td>
                 </tr>
                 <tr class="hover:bg-[#C19A6B] transition duration-300">
                     <td class="p-3 border border-[#A67B5B]">#1004</td>
                     <td class="p-3 border border-[#A67B5B]">Payment Error</td>
                     <td class="p-3 border border-[#A67B5B]">Browny James</td>
-                    <td class="p-3 border border-[#A67B5B] text-red-700 font-bold">Declined</td>
+                    <td class="p-3 border border-[#A67B5B] text-red-700 font-bold status">Declined</td>
                     <td class="p-3 border border-[#A67B5B]">2025-02-20</td>
                 </tr>
                 <tr class="hover:bg-[#C19A6B] transition duration-300">
                     <td class="p-3 border border-[#A67B5B]">#1005</td>
                     <td class="p-3 border border-[#A67B5B]">Payment Error</td>
                     <td class="p-3 border border-[#A67B5B]">Awra Briguela</td>
-                    <td class="p-3 border border-[#A67B5B] text-yellow-700 font-bold">Pending</td>
+                    <td class="p-3 border border-[#A67B5B] text-yellow-700 font-bold status">Pending</td>
                     <td class="p-3 border border-[#A67B5B]">2025-02-20</td>
                 </tr>
             </tbody>

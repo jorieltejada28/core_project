@@ -20,6 +20,16 @@
     color: #4E3B2A !important;
 }
 
+/* Status Glow Effect */
+.status {
+    transition: text-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.status:hover {
+    text-shadow: 0 0 8px rgba(255, 223, 100, 1), 0 0 15px rgba(255, 223, 100, 0.8);
+    transform: scale(1.1); /* Slightly enlarges the text */
+}
+
 .unselectable {
     user-select: none;
     -webkit-user-select: none;
