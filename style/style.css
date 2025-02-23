@@ -24,8 +24,7 @@
 #loadingScreen {
     position: fixed;
     inset: 0;
-    background-color: #594423;
-    /* Updated background color */
+    background-color: #594423; /* Updated background color */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,20 +44,19 @@
 }
 
 .spinner {
-    width: 60px;
-    height: 60px;
-    border: 6px solid rgba(255, 255, 255, 0.2);
-    border-top: 6px solid #F7E6CA;
+    width: 80px;  /* Increased size */
+    height: 80px; /* Increased size */
+    border: 8px solid rgba(255, 255, 255, 0.2); /* Thicker border */
+    border-top: 8px solid #F7E6CA;
     border-radius: 50%;
     animation: spin 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
-    box-shadow: 0 0 15px #F7E6CA;
+    box-shadow: 0 0 20px #F7E6CA; /* Enhanced glow */
 }
 
 @keyframes spin {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
@@ -77,12 +75,10 @@
     0% {
         opacity: 0.6;
     }
-
     50% {
         opacity: 1;
         transform: scale(1.05);
     }
-
     100% {
         opacity: 0.6;
     }
