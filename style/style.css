@@ -1,6 +1,7 @@
 #sidebar {
     transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
 }
+
 .chart {
     width: 100% !important;
 }
@@ -13,7 +14,76 @@
 #pieChart2 {
     height: 300px !important;
 }
+
 .custom-gradient-bg {
     background: #F7E6CA !important;
     color: #4E3B2A !important;
+}
+
+/* Loading Screen Styles */
+#loadingScreen {
+    position: fixed;
+    inset: 0;
+    background-color: #594423;
+    /* Updated background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.8s ease-in-out, visibility 0.8s ease-in-out;
+}
+
+#loadingScreen.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    border-top: 6px solid #F7E6CA;
+    border-radius: 50%;
+    animation: spin 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    box-shadow: 0 0 15px #F7E6CA;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F7E6CA;
+    text-shadow: 0 0 10px #F7E6CA;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 0.6;
+    }
 }

@@ -52,3 +52,10 @@ function updateClock() {
 
 setInterval(updateClock, 1000);
 updateClock(); // Initialize immediately
+
+// Hide the loading screen after the page is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        document.getElementById("loadingScreen").classList.add("hidden");
+    }, 500); // Adjust delay based on fetching time
+});
