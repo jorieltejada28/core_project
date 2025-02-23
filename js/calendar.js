@@ -48,18 +48,18 @@ function generateCalendar(year, month) {
             "border",           // Adds a border
             "border-[#4E3B2A]"  // Sets border color
         );
-        
+
         // Highlight today's date if it's the current month and year
         if (i === today && year === currentYearToday && month === currentMonthToday) {
             dateElement.style.backgroundColor = "#2A6B7A";
             dateElement.style.color = "white";
             dateElement.style.fontWeight = "bold";
-        
+
             // Add hover effect using JavaScript
             dateElement.addEventListener("mouseenter", function () {
                 this.style.backgroundColor = "#1E4F5C"; // Darker shade on hover
             });
-        
+
             dateElement.addEventListener("mouseleave", function () {
                 this.style.backgroundColor = "#2A6B7A"; // Reset to original color
             });
@@ -85,6 +85,18 @@ function changeMonth(offset) {
     generateCalendar(currentYear, currentMonth);
 }
 
+// Function to auto-update calendar at midnight
+function autoUpdateCalendar() {
+    setInterval(() => {
+        const now = new Date();
+        if (now.getHours() === 0 && now.getMinutes() === 0) { // Checks at midnight
+            currentYear = now.getFullYear();
+            currentMonth = now.getMonth();
+            generateCalendar(currentYear, currentMonth);
+        }
+    }, 60000); // Check every minute
+}
+
 // Ensure the script runs after the page loads
 window.onload = function () {
     const now = new Date();
@@ -94,4 +106,6 @@ window.onload = function () {
 
     document.getElementById("prevMonth").addEventListener("click", () => changeMonth(-1));
     document.getElementById("nextMonth").addEventListener("click", () => changeMonth(1));
+
+    autoUpdateCalendar(); // Start real-time updates
 };

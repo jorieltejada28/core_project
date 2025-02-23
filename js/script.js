@@ -36,3 +36,19 @@ document.addEventListener('click', function (event) {
         profileDropdown.classList.add('hidden');
     }
 });
+
+function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+    const ampm = hours >= 12 ? "PM" : "AM";
+
+    hours = hours % 12 || 12; // Convert 24-hour format to 12-hour
+
+    const formattedTime = `${hours}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")} ${ampm}`;
+    document.getElementById("clock").textContent = formattedTime;
+}
+
+setInterval(updateClock, 1000);
+updateClock(); // Initialize immediately
