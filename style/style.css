@@ -20,6 +20,13 @@
     color: #4E3B2A !important;
 }
 
+.unselectable {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 /* Loading Screen Styles */
 #loadingScreen {
     position: fixed;

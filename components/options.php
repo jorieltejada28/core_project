@@ -14,7 +14,7 @@
     <div class="flex-1"></div>
     
     <!-- Real-time Clock (Centered Under Icons) -->
-    <div id="clock" class="text-lg font-bold text-[#4E3B2A] mt-1 cursor-default"></div>
+    <div id="clock" class="text-lg font-bold text-[#4E3B2A] mt-1 cursor-default unselectable"></div>
 
     <!-- Envelope Dropdown -->
     <div class="relative">
