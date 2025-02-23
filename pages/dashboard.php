@@ -85,7 +85,7 @@
             <button id="prevMonth" class="text-5xl px-3 text-[#4E3B2A] font-bold hover:text-[#A67B5B] transition-transform transform hover:scale-110">
                 &#8592; <!-- Left Arrow -->
             </button>
-            <h2 id="monthYear" class="text-2xl font-bold"></h2>
+            <h2 id="monthYear" class="text-xl font-bold"></h2>
             <button id="nextMonth" class="text-5xl px-3 text-[#4E3B2A] font-bold hover:text-[#A67B5B] transition-transform transform hover:scale-110">
                 &#8594; <!-- Right Arrow -->
             </button>

@@ -3,7 +3,7 @@
     <i class="fas fa-hotel text-5xl"></i>
     <p class="text-sm font-bold mt-2">Core</p>
     <p class="text-xs text-[#4E3B2A] ">Hotel and Restaurant</p>
-    <p class="text-left mt-2">
+    <p class="text-left mt-2 text-sm">
         Admin: <span class="font-bold text-[#4E3B2A]">Richard Gulmatico</span>
     </p>
 
