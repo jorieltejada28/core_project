@@ -58,7 +58,7 @@
 <!-- Charts Section -->
 <div class="bg-[#F7E6CA] p-10 grid grid-cols-3 gap-6 border-r-4 border-l-4 border-[#4E3B2A]">
     <!-- Line Chart -->
-    <div class="col-span-3 text-center border-4 border-[#4E3B2A] p-4">
+    <div class="col-span-3 text-center border-4 rounded-lg border-[#4E3B2A] p-4">
         <h2 class="text-[#4E3B2A] text-xl font-bold mb-4">Tickets Solved Over Time</h2>
         <div class="flex items-center justify-center">
             <canvas id="lineChart" class="chart"></canvas>
@@ -66,13 +66,13 @@
     </div>
 
     <!-- Donut Charts -->
-    <div class="text-center border-4 border-[#4E3B2A] p-4">
+    <div class="text-center border-4 rounded-lg border-[#4E3B2A] p-4">
         <h2 class="text-[#4E3B2A] text-xl font-bold mb-4">Ticket Categories</h2>
         <div class="flex items-center justify-center">
             <canvas id="pieChart1" class="chart"></canvas>
         </div>
     </div>
-    <div class="text-center border-4 border-[#4E3B2A] p-4">
+    <div class="text-center border-4 rounded-lg border-[#4E3B2A] p-4">
         <h2 class="text-[#4E3B2A] text-xl font-bold mb-4">Ticket Status</h2>
         <div class="flex items-center justify-center">
             <canvas id="pieChart2" class="chart"></canvas>
