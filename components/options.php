@@ -49,7 +49,7 @@
         <div id="profileDropdown" class="hidden absolute right-0 mt-2 w-48 bg-[#F7E6CA] text-[#594423] rounded-md shadow-lg border border-[#A67B5B] hover:text-[#4E3B2A] transition">
             <a href="#" class="block px-4 py-2 hover:bg-[#4E3B2A] hover:text-[#F7E6CA]">View Profile</a>
             <a href="#" class="block px-4 py-2 hover:bg-[#4E3B2A] hover:text-[#F7E6CA]">Settings</a>
-            <a href="#" class="block px-4 py-2 hover:bg-[#2A6B7A] hover:text-[#F7E6CA]">Sign Out</a>
+            <a href="#" class="block px-4 py-2 hover:bg-red-600 hover:text-[#F7E6CA]">Sign Out</a>
         </div>
     </div>
 </div>
