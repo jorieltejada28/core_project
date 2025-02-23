@@ -22,7 +22,7 @@ function generateCalendar(year, month) {
     const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     weekdays.forEach(day => {
         const dayElement = document.createElement("div");
-        dayElement.classList.add("font-bold", "text-blue-400");
+        dayElement.classList.add("font-bold", "text-[#4E3B2A]");
         dayElement.textContent = day;
         calendar.appendChild(dayElement);
     });
@@ -37,12 +37,33 @@ function generateCalendar(year, month) {
     // Fill Dates
     for (let i = 1; i <= daysInMonth; i++) {
         const dateElement = document.createElement("div");
-        dateElement.classList.add("p-2", "bg-gray-700", "rounded-lg", "cursor-pointer", "hover:bg-blue-500", "transition");
-
+        dateElement.classList.add(
+            "p-2",
+            "bg-[#F7E6CA]",   // Background color
+            "rounded-lg",
+            "cursor-pointer",
+            "hover:bg-[#4E3B2A]", // Hover effect
+            "hover:text-white",   // Text turns white on hover
+            "transition",
+            "border",           // Adds a border
+            "border-[#4E3B2A]"  // Sets border color
+        );
+        
         // Highlight today's date if it's the current month and year
         if (i === today && year === currentYearToday && month === currentMonthToday) {
-            dateElement.classList.add("bg-green-500", "text-white", "font-bold");
-        }
+            dateElement.style.backgroundColor = "#2A6B7A";
+            dateElement.style.color = "white";
+            dateElement.style.fontWeight = "bold";
+        
+            // Add hover effect using JavaScript
+            dateElement.addEventListener("mouseenter", function () {
+                this.style.backgroundColor = "#1E4F5C"; // Darker shade on hover
+            });
+        
+            dateElement.addEventListener("mouseleave", function () {
+                this.style.backgroundColor = "#2A6B7A"; // Reset to original color
+            });
+        }              
 
         dateElement.textContent = i;
         calendar.appendChild(dateElement);

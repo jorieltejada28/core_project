@@ -2,14 +2,16 @@
 <html lang="en">
 
 <head>
-    <?php include "../components/head.php" ?>
+    <?php
+        include "../components/title.php" ;
+        include "../components/head.php" ;
+    ?>
 </head>
 
-<body class="flex flex-col min-h-screen bg-gray-900">
+<body class="flex flex-col min-h-screen bg-[#594423]">
 
     <!-- Sidebar -->
-    <div id="sidebar" class="w-64 bg-gray-900 text-white text-lg p-4 fixed h-full left-0 top-0 transform transition-transform flex flex-col justify-between border-r-4 border-blue-500">
-        <!-- Sidebar Content -->
+    <div id="sidebar" class="w-64 bg-[#F7E6CA] text-[#4E3B2A] text-lg p-4 fixed h-full left-0 top-0 transform transition-transform flex flex-col justify-between border-r-4 border-[#4E3B2A]">
         <?php include "../components/sidebar.php" ?>
     </div>
 
@@ -31,7 +33,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center p-4 mt-auto border-t-4 border-blue-500"">
+    <footer class="bg-[#F7E6CA] text-[#4E3B2A] text-center p-4 mt-auto border-t-4 border-[#4E3B2A]">
         <?php include "../components/footer.php" ?>
     </footer>
 

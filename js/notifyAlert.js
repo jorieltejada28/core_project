@@ -3,7 +3,7 @@ function showInfo(title, message) {
         title: title,
         text: message,
         icon: "info",
-        confirmButtonColor: "#007BFF",
+        confirmButtonColor: "#2A6B7A",
         confirmButtonText: "OK",
         customClass: {
             popup: "custom-gradient-bg"
@@ -15,7 +15,7 @@ function showInfo(title, message) {
                 toast: true,
                 position: "top-end",
                 icon: "success",
-                title: "Richard Supot XP!",
+                title: "<strong>Success</strong>: Message!",
                 showConfirmButton: false,
                 timer: 2000,
                 timerProgressBar: true,

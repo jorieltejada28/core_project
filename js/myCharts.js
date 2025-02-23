@@ -7,7 +7,7 @@ new Chart(ctx1, {
         datasets: [{
             label: 'Tickets Solved',
             data: [10, 25, 40, 50, 65, 80],
-            borderColor: '#17C3C3',
+            borderColor: '#2A6B7A', // Brown shade
             borderWidth: 2,
             fill: false
         }]
@@ -26,7 +26,7 @@ new Chart(ctx2, {
         labels: ['Info', 'Help', 'Tech'],
         datasets: [{
             data: [300, 150, 200],
-            backgroundColor: ['#2F697D', '#17C3C3', '#F4B942']
+            backgroundColor: ['#4E3B2A', '#8B5E3B', '#C19A6B'] // Brown shades
         }]
     },
     options: {
@@ -43,7 +43,7 @@ new Chart(ctx3, {
         labels: ['Resolved', 'Pending'],
         datasets: [{
             data: [500, 100],
-            backgroundColor: ['#F08E7E', '#E15565']
+            backgroundColor: ['#A67B5B', '#594423'] // Brown shades
         }]
     },
     options: {
